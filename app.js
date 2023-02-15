@@ -30,21 +30,9 @@ app.post("/", function(req, res){
             res.write("<h1>The temprature in " + query + " is " + temp + " degrees Celcius.</h1>");
             res.write("<img src=" + imageURL + " >");
             res.send();
-
-            // const object = {
-            //     name: "Ekrem",
-            //     favouriteFood: "Pizza"
-            // }
-            // console.log(JSON.stringify(object));
-            //console.log(weatherData);
         });
     });
-    //res.send("Server is up and running");
 });
-
-
-
-
 
 app.listen(3000,function(){
    console.log("Server is running on port 3000."); 
